@@ -1,0 +1,2 @@
+org.springframework.boot.env.EnvironmentPostProcessor=\
+        com.odianyun.internship.startup.config.CustomEnvironmentPostProcessor

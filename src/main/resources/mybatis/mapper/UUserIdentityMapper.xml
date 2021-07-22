@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.odianyun.internship.mapper.UUserIdentityMapper">
+    <select id="getUserLabel" resultType="string">
+        select ext_field1
+        from u_user_identity
+        where user_id = #{userId}
+    </select>
+
+    <update id="updateUserLabel">
+        update u_user_identity
+        set ext_field1 = #{extField1}
+        where user_id = #{userId}
+    </update>
+</mapper>
